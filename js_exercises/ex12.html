@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Count letter</title>
+    </head>
+    <body>
+        <p id="count"></p>
+        <script>
+            function char_count(str, key) 
+            {
+                var cnt = 0;
+                for (var pos=0; pos< str.length;pos++)
+                {
+                       if (str.charAt(pos) == key)
+                           {
+                                    cnt += 1;
+                            }
+                }
+                return cnt;
+            }
+
+        document.getElementById("count").innerHTML=char_count("apple","p");       
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

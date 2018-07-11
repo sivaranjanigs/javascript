@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON</title>
+</head>
+
+<body>
+
+    <p id="jsn"></p>
+    <script>
+        var jsonStr = '{"mike":"Book","jason":"sweater","chels":"iPad"}';
+        var object = JSON.parse(jsonStr);
+        document.getElementById("jsn").innerHTML = object.jason;
+    </script>
+</body>
+
+</html>

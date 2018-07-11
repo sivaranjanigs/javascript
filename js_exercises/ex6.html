@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Difference of 2 Arrays</title>
+</head>
+
+<body>
+    <h1>Difference of two Arrays</h1>
+    <p id="diff"></p>
+    <script>
+        function arrDifference(arr1, arr2) {
+            var arr = [];
+            arr1 = arr1.toString().split(',');
+            arr2 = arr2.toString().split(',');
+
+            for (var i in arr1) {
+                if (arr2.indexOf(arr1[i]) === -1)
+                    arr.push(arr1[i]);
+            }
+            for (i in arr2) {
+                if (arr1.indexOf(arr2[i]) === -1)
+                    arr.push(arr2[i]);
+            }
+            return arr;
+        }
+        document.write(arrDifference([50, 40, 90], [70, 50, 99, 40, 90, 100]));
+
+    </script>
+</body>
+
+</html>

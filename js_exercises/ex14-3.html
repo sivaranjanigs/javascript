@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>email</title>
+</head>
+
+<body>
+    <script>
+        var arr = [];
+        var myObj =
+            [{ 'name': 'Saurabh', 'age': 30, 'occupation': "Team Leader" },
+            { 'name': 'Anupriya', 'age': 32, 'occupation': "Team Leader" },
+            { 'name': 'Kalyani', 'age': 25, 'occupation': "Programmer" },
+            { 'name': 'Damodaran', 'age': 27, 'occupation': "Programmer" },
+            { 'name': 'Krishnakath', 'age': 22, 'occupation': "Programmer" },
+            { 'name': 'Venketraman', 'age': 28, 'occupation': "Programmer" }];
+        var newObj = {}
+        for (var z of myObj) {
+            newObj[z['occupation']] = [];
+        }
+        for (var z of myObj) {
+            newObj[z['occupation']].push(z);
+        }
+        for (var k in newObj) {
+            for (var l of newObj[k]) {
+                delete l['occupation']
+            }
+        }
+        console.log(newObj)
+
+
+
+    </script>
+</body>
+
+</html>

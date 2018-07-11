@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Listing Properties</title>
+</head>
+
+<body>
+    <h1>List properties of objects</h1>
+    <p id="list"></p>
+    <script>
+        var obj = { first_name: "Surya", last_name: "Prakash", age: 21 };
+        document.getElementById("list").innerHTML = (Object.getOwnPropertyNames(obj));
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Average and Grade</title>
+</head>
+
+<body>
+    <h1>Average and Grade</h1>
+    <p id="avg"></p>
+    <p id="grade"></p>
+    <script>
+
+        var stud = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+        var total = 0, avg, grade, i;
+        for (i = 0; i < 5; i++) {
+            total = total + stud[i][1];
+        }
+        avg = total / 5;
+        if (avg < 60)
+            grade = 'F';
+        else if (avg < 70)
+            grade = 'D';
+        else if (avg < 80)
+            grade = 'C';
+        else if (avg < 90)
+            grade = 'B';
+        else if (avg < 100)
+            grade = 'A';
+
+        document.getElementById("avg").innerHTML = "AVERAGE: " + avg;
+        document.getElementById("grade").innerHTML = "GRADE: " + grade;
+
+
+    </script>
+</body>
+
+</html>

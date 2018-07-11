@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Deleting Duplicates</title>
+</head>
+
+<body>
+    <h1>Delete Duplicate items</h1>
+    <p id="del"></p>
+    <script>
+        var a = [1, 2, 2, 1, 3, 4, 5, 5];
+        function delDuplicate(arr) {
+            var new_arr = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (new_arr.indexOf(arr[i]) == -1) {
+                    new_arr.push(arr[i]);
+                }
+            }
+
+            return new_arr;
+        }
+        document.getElementById("del").innerHTML = delDuplicate(a);
+    </script>
+</body>
+
+</html>
